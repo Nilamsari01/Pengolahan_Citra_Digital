@@ -75,7 +75,3 @@ watermark ikut terdeteksi, sehingga area kosong bisa salah menjadi PRESENT (fals
 hilang/terputus, sehingga tanda tangan asli bisa salah menjadi ABSENT (false negative).
 *(Catatan: arah ini berlaku untuk `THRESH_BINARY_INV`, yaitu piksel ≤ threshold menjadi foreground. Pada kode ini global threshold 127 yang "terlalu rendah" terbukti memberi 0% pada tanda tangan terang.)*
 
-## Keterbatasan
-- Baru diuji pada sedikit citra; tambahkan lebih banyak sampel present/absent untuk evaluasi yang andal.
-- ROI tetap, sehingga sensitif terhadap pergeseran posisi dokumen.
-- Stempel atau teks cetak di dalam ROI dapat terhitung sebagai foreground.
